@@ -1,0 +1,49 @@
+
+.card {
+  border-radius: 3px;
+  color: #E6FFFF;
+  background-color: black;
+  border: 1.5px solid #18CAE6;
+  margin-bottom: 5px;
+  padding: 6px 8px 4px;
+  cursor: -webkit-grab; cursor: -moz-grab;
+}
+
+.card:hover {
+  background-color: #0F223D;
+  color: gray;
+}
+
+.add-card {
+  display: block;
+  margin: 2px -3px -3px;
+  padding: 7px 10px;
+  color: #939393;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  &:hover {
+   background-color: #0F223D;
+   color: #111;
+  }
+}
+
+.card-edit {
+  cursor: pointer;
+  font-size: 10px;
+  color: gray;
+}
+
+.card-delete {
+  cursor: pointer;
+  font-size: 10px;
+  color: gray;
+}
+
+.ui-sortable-helper {
+  -ms-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  z-index: 1000;
+  position: relative;
+}

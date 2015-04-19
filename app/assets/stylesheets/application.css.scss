@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+$brand-primary  : #598FAD;
+
+@import "bootstrap";
+@import "font-awesome";
+
+// for fixed top navbar
+body {
+  padding-top: 60px;
+  background-color: black;
+}
+
+.panel-spaced {
+  margin-left: 10px;
+}
+
+.well-unspaced {
+  margin-top: 0px;
+}
+
+.close-lg {
+  font-size: 30px;
+}
+
+.add-menu {
+  width: 300px;
+  max-height: 150px;
+  .header {
+    line-height:30px;
+    text-align: center;
+    color: #939393;
+    display: block;
+    height: 30px;
+  }
+  li {
+    a {
+      white-space: normal;
+      .add-item-description {
+        display: block;
+        clear: both;
+        color: #939393;
+        font-size: 12px;
+        margin-top: 4px;
+      }
+      &:hover, &:hover .add-item-description {
+        background-color: #318ec4;
+        color: #fff;
+      }
+      &:hover span {
+        color: #2e51ca;
+      }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ul .dropdown-menu {
+  background-color: black;
+  border: #6FC3DF 1px solid;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn-success {
+  background-color: black;
+  border: #6FC3DF 1px solid;
+}
+
+
+.sign {
+  color: #E6FFFF;
+  background: black;
+}
