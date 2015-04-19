@@ -9,5 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-secret = Rails.env.production? ? ENV['SECRET_TOKEN'] : "top_secret_token"
-YourApp::Application.config.secret_key_base = secret
+TrelloClone::Application.config.secret_key_base = 'aa49771b44cafce853f7705738e7eab1aedf0e9e9790076b6069f0291957e03d3f832ea7a63a62de5f42dcf514b056a3395eb008f54d324270c41706dca9dd1b'
